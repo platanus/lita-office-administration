@@ -1,7 +1,6 @@
 module Lita
   module Handlers
     class OfficeAutomation < Handler
-
       def self.help_msg(route)
         { "lightning-office-automation: #{t("help.#{route}.usage")}" => t("help.#{route}.description") }
       end

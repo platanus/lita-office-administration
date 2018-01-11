@@ -17,7 +17,7 @@ module Lita
 
       private
       def headers
-        {"Authorization" => "Token token=\"#{ENV['HASSIO_SERVER_TOKEN']}\"", 'Content-Type' => 'application/json' }
+        {'x-ha-access' => "#{ENV['HASSIO_SERVER_TOKEN']}", 'Content-Type' => 'application/json' }
       end
 
     end
