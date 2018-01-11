@@ -1,0 +1,9 @@
+en:
+  lita:
+    handlers:
+      office_automation:
+        open_main_door: "La puerta se abrió"
+        help:
+          open_main_door:
+            usage: abre la puerta
+            description: Permite abrir la puerta principal de la oficina
