@@ -10,7 +10,7 @@ module Lita
       end
 
       # Routes.
-      route(/abr(e|me)/i, command: true, help: help_msg(:open_main_door)) do |response|
+      route(/^(abre|abreme|alohomora|abreteseamo)$/i, command: true, help: help_msg(:open_main_door)) do |response|
         hassio_service.open_main_door
         response.reply(t(:open_main_door))
       end
