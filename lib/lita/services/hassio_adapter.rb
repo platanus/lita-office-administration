@@ -8,18 +8,19 @@ module Lita
       end
 
       def open_main_door
-        self.class.post('/services/switch/turn_on',
-                        :body => {
-                            :entity_id => "switch.main_door"
-                        }.to_json,
-                        :headers => headers)
+        self.class.post(
+          '/services/switch/turn_on',
+          body: {
+            entity_id: 'switch.main_door'
+          }.to_json, headers: headers
+        )
       end
 
       private
-      def headers
-        {'x-ha-access' => "#{ENV['HASSIO_SERVER_TOKEN']}", 'Content-Type' => 'application/json' }
-      end
 
+      def headers
+        { 'x-ha-access' => ENV['HASSIO_SERVER_TOKEN'], 'Content-Type' => 'application/json' }
+      end
     end
   end
 end
