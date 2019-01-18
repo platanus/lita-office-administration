@@ -5,8 +5,8 @@ Gem::Specification.new do |spec|
   spec.email         = ["cgriffero@miuandes.cl"]
   spec.description   = "Enables office automation through slack"
   spec.summary       = "Enables office automation through slack"
-  spec.homepage      = "TODO: Add a homepage"
-  spec.license       = "TODO: Add a license"
+  spec.homepage      = "https://github.com/platanus/lita-office/automation"
+  spec.license       = "MIT"
   spec.metadata      = { "lita_plugin_type" => "handler" }
 
   spec.files         = `git ls-files`.split($/)
